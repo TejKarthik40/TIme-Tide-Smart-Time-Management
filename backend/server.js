@@ -15,7 +15,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/timetide', {
+mongoose.connect('mongodb+srv://SwaroopSai:Swaroopsai1138n@cluster0.5axqcdf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -38,7 +38,7 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   store: MongoStore.create({
-    mongoUrl: 'mongodb://localhost:27017/timetide'
+    mongoUrl: 'mongodb+srv://SwaroopSai:Swaroopsai1138n@cluster0.5axqcdf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
   }),
   cookie: {
     secure: false,
