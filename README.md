@@ -59,7 +59,6 @@ Create `backend/.env` and set:
 - `MONGODB_URI` — your Mongo connection string (if not set, server may use a default/local)
 - `PORT` — backend port (defaults to 5000)
 - `OPENWEATHER_API_KEY` — for weather widget (optional)
-- `GEMINI_API_KEY` — reserved for future AI integrations (optional; not required for local suggestions)
 
 Note: Frontend proxies `/api` to the backend at `http://localhost:5000` (see `frontend/vite.config.js`).
 
